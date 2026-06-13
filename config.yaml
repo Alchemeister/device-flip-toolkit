@@ -1,0 +1,346 @@
+# Device Flip Toolkit - Configuration
+# Edit this file to customize targets, pricing, and sources
+
+location:
+  city: Lafayette
+  state: LA
+  zip: "70501"
+  radius_miles: 50
+
+ebay:
+  # eBay takes ~13.25% in final value fees (varies by category)
+  fee_percent: 13.25
+  # Payment processing fee
+  payment_fee_percent: 2.9
+  payment_fee_fixed: 0.30
+
+shipping:
+  # Average shipping cost per device type
+  phone: 8.00
+  tablet: 12.00
+  laptop: 18.00
+
+devices:
+  phones:
+    - model: "iPhone 12"
+      storage: "128GB"
+      buy_min: 140
+      buy_max: 190
+      kit_cost: 35
+      sell_min: 280
+      sell_max: 340
+      difficulty: "Easy"
+      time_minutes: 30
+      search_terms:
+        - "iphone 12 cracked screen"
+        - "iphone 12 broken glass"
+        - "iphone 12 for parts"
+      deal_killers:
+        icloud_locked: true
+        face_id_broken_penalty: 50
+        battery_threshold: 85
+        battery_penalty: 20
+        back_glass_penalty: 25
+        back_glass_time: 60
+
+    - model: "iPhone 13"
+      storage: "128GB"
+      buy_min: 200
+      buy_max: 260
+      kit_cost: 40
+      sell_min: 340
+      sell_max: 420
+      difficulty: "Easy"
+      time_minutes: 30
+      search_terms:
+        - "iphone 13 cracked screen"
+        - "iphone 13 broken glass"
+        - "iphone 13 for parts"
+      deal_killers:
+        icloud_locked: true
+        face_id_broken_penalty: 50
+        battery_threshold: 85
+        battery_penalty: 20
+        back_glass_penalty: 25
+        back_glass_time: 60
+
+    - model: "iPhone 13 Pro"
+      storage: "128GB"
+      buy_min: 280
+      buy_max: 350
+      kit_cost: 55
+      sell_min: 450
+      sell_max: 550
+      difficulty: "Medium"
+      time_minutes: 45
+      search_terms:
+        - "iphone 13 pro cracked screen"
+        - "iphone 13 pro broken glass"
+        - "iphone 13 pro for parts"
+      deal_killers:
+        icloud_locked: true
+        face_id_broken_penalty: 50
+        battery_threshold: 85
+        battery_penalty: 20
+        back_glass_penalty: 30
+        back_glass_time: 60
+
+    - model: "iPhone 14"
+      storage: "128GB"
+      buy_min: 300
+      buy_max: 370
+      kit_cost: 50
+      sell_min: 430
+      sell_max: 520
+      difficulty: "Easy"
+      time_minutes: 35
+      search_terms:
+        - "iphone 14 cracked screen"
+        - "iphone 14 broken glass"
+        - "iphone 14 for parts"
+      deal_killers:
+        icloud_locked: true
+        face_id_broken_penalty: 50
+        battery_threshold: 85
+        battery_penalty: 20
+        back_glass_penalty: 30
+        back_glass_time: 60
+
+    - model: "Galaxy S22"
+      storage: "128GB"
+      buy_min: 120
+      buy_max: 170
+      kit_cost: 60
+      sell_min: 250
+      sell_max: 310
+      difficulty: "Medium"
+      time_minutes: 45
+      search_terms:
+        - "galaxy s22 cracked screen"
+        - "galaxy s22 broken screen"
+        - "galaxy s22 for parts"
+      deal_killers:
+        icloud_locked: false
+        face_id_broken_penalty: 0
+        battery_threshold: 85
+        battery_penalty: 15
+        back_glass_penalty: 20
+        back_glass_time: 45
+
+    - model: "Galaxy S23"
+      storage: "128GB"
+      buy_min: 180
+      buy_max: 240
+      kit_cost: 70
+      sell_min: 320
+      sell_max: 390
+      difficulty: "Medium"
+      time_minutes: 45
+      search_terms:
+        - "galaxy s23 cracked screen"
+        - "galaxy s23 broken screen"
+        - "galaxy s23 for parts"
+      deal_killers:
+        icloud_locked: false
+        face_id_broken_penalty: 0
+        battery_threshold: 85
+        battery_penalty: 15
+        back_glass_penalty: 20
+        back_glass_time: 45
+
+  tablets:
+    - model: "iPad 9th Gen"
+      storage: "64GB"
+      buy_min: 100
+      buy_max: 150
+      kit_cost: 25
+      sell_min: 200
+      sell_max: 250
+      difficulty: "Medium"
+      time_minutes: 25
+      search_terms:
+        - "ipad 9th gen cracked screen"
+        - "ipad 9th generation broken glass"
+        - "ipad 9 for parts"
+      deal_killers:
+        icloud_locked: true
+        face_id_broken_penalty: 0
+        battery_threshold: 85
+        battery_penalty: 15
+        back_glass_penalty: 0
+        back_glass_time: 0
+
+    - model: "iPad Air 4th Gen"
+      storage: "64GB"
+      buy_min: 180
+      buy_max: 240
+      kit_cost: 40
+      sell_min: 320
+      sell_max: 400
+      difficulty: "Medium"
+      time_minutes: 30
+      search_terms:
+        - "ipad air 4 cracked screen"
+        - "ipad air 4th gen broken glass"
+        - "ipad air 4 for parts"
+      deal_killers:
+        icloud_locked: true
+        face_id_broken_penalty: 0
+        battery_threshold: 85
+        battery_penalty: 15
+        back_glass_penalty: 0
+        back_glass_time: 0
+
+    - model: "iPad Pro 11 (2018/2020)"
+      storage: "128GB"
+      buy_min: 250
+      buy_max: 350
+      kit_cost: 60
+      sell_min: 450
+      sell_max: 550
+      difficulty: "Hard"
+      time_minutes: 60
+      search_terms:
+        - "ipad pro 11 cracked screen"
+        - "ipad pro 11 broken glass"
+        - "ipad pro 11 for parts"
+      deal_killers:
+        icloud_locked: true
+        face_id_broken_penalty: 80
+        battery_threshold: 85
+        battery_penalty: 20
+        back_glass_penalty: 0
+        back_glass_time: 0
+
+  laptops:
+    - model: "MacBook Air M1 (2020)"
+      storage: "256GB"
+      buy_min: 300
+      buy_max: 400
+      kit_cost: 150
+      sell_min: 550
+      sell_max: 700
+      difficulty: "Hard"
+      time_minutes: 90
+      search_terms:
+        - "macbook air m1 cracked screen"
+        - "macbook air m1 broken screen"
+        - "macbook air m1 for parts"
+      deal_killers:
+        icloud_locked: true
+        face_id_broken_penalty: 0
+        battery_threshold: 80
+        battery_penalty: 50
+        back_glass_penalty: 0
+        back_glass_time: 0
+
+    - model: "Dell XPS 15 (9510)"
+      storage: "512GB"
+      buy_min: 300
+      buy_max: 400
+      kit_cost: 90
+      sell_min: 650
+      sell_max: 800
+      difficulty: "Medium"
+      time_minutes: 60
+      search_terms:
+        - "dell xps 15 cracked screen"
+        - "dell xps 15 broken screen"
+        - "dell xps 15 for parts"
+      deal_killers:
+        icloud_locked: false
+        face_id_broken_penalty: 0
+        battery_threshold: 80
+        battery_penalty: 40
+        back_glass_penalty: 0
+        back_glass_time: 0
+
+    - model: "ThinkPad X1 Carbon Gen 9"
+      storage: "256GB"
+      buy_min: 250
+      buy_max: 350
+      kit_cost: 80
+      sell_min: 500
+      sell_max: 650
+      difficulty: "Medium"
+      time_minutes: 60
+      search_terms:
+        - "thinkpad x1 carbon cracked screen"
+        - "thinkpad x1 carbon broken screen"
+        - "thinkpad x1 carbon for parts"
+      deal_killers:
+        icloud_locked: false
+        face_id_broken_penalty: 0
+        battery_threshold: 80
+        battery_penalty: 40
+        back_glass_penalty: 0
+        back_glass_time: 0
+
+    - model: "HP Spectre x360 14"
+      storage: "256GB"
+      buy_min: 250
+      buy_max: 350
+      kit_cost: 100
+      sell_min: 500
+      sell_max: 650
+      difficulty: "Medium"
+      time_minutes: 60
+      search_terms:
+        - "hp spectre x360 cracked screen"
+        - "hp spectre x360 broken screen"
+        - "hp spectre x360 for parts"
+      deal_killers:
+        icloud_locked: false
+        face_id_broken_penalty: 0
+        battery_threshold: 80
+        battery_penalty: 40
+        back_glass_penalty: 0
+        back_glass_time: 0
+
+sources:
+  ebay:
+    enabled: true
+    base_url: "https://www.ebay.com"
+    max_results: 50
+  facebook_marketplace:
+    enabled: true
+    # Requires manual browsing or FB API access
+    note: "Use local radius search"
+  offerup:
+    enabled: true
+    base_url: "https://offerup.com"
+  mercari:
+    enabled: true
+    base_url: "https://www.mercari.com"
+  swappa:
+    enabled: true
+    base_url: "https://swappa.com"
+
+ai:
+  ollama:
+    model: "llama3.2"
+    vision_model: "llama3.2-vision"
+    base_url: "http://localhost:11434"
+  listing:
+    title_max_chars: 80
+    include_caveats: true
+    include_seo_keywords: true
+  photo_assessment:
+    enabled: true
+    check_for:
+      - "back glass cracks"
+      - "frame dents"
+      - "water damage indicators"
+      - "missing screws"
+      - "non-original parts"
+
+repair_parts_sources:
+  - name: "MobileSentrix"
+    url: "https://www.mobilesentrix.com"
+    note: "Good quality, fast shipping, wholesale pricing"
+  - name: "InjuredGadgets"
+    url: "https://www.injuredgadgets.com"
+    note: "Best for bulk orders, wholesale accounts"
+  - name: "Amazon"
+    url: "https://www.amazon.com"
+    note: "Good for singles, Prime returns if DOA"
